@@ -19,7 +19,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
     <!-- Etiqueta para cargar hoja de estilos CSS -->
     <link rel="stylesheet" href="./css/normalize.css">
     
@@ -158,26 +159,96 @@
     </section>
     <!-- End - Section Services -->
 
-
-
     <!-- Start - Section App -->
+    <section class="container app">
+        <div class="mobile">
+            <h2 class="mobile__title">Descarga Nuestra Aplicación</h2>
+            <p class="mobile__description">
+                Olvídate de recorrer la ciudad buscando repuestos. Con la app de REPUESMAP, 
+                localiza la pieza exacta para tu vehículo en segundos, compara precios y resérvala al instante 
+                antes de salir de casa. ¡Ahorra tiempo y vuelve a la ruta!
+            </p>
+            <div class="mobile__buttons">
+                <img src="./images/appstore.png" alt="AppStore" loading="lazy">
+                <img src="./images/googleplay.png" alt="GooglePlay" loading="lazy">
+            </div>
+
+        </div>
+
+        <div class="mobile__img">
+            <img src="./images/appmobile.png" alt="REPUESMAP Mobile" loading="lazy">
+        </div>
+
+    </section>
     <!-- End - Section App -->
-
-
 
     <!-- Start - Section Gallery -->
     <!-- End - Section Gallery -->
 
-
-
     <!-- Start - Section Contact -->
+    <section class="container contact">
+        <div class="contact__form">
+            <h2 class="contact__title">Contáctanos</h2>
+            <form>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="correo" placeholder="Correo" required>
+                <input type="tel" name="celular" placeholder="Celular" required>
+                <textarea name="Observaciones" placeholder="Observaciones" rows="6"></textarea>
+                <label class="checkbox__label">
+                    <input type="checkbox" required>
+                    Terminos y Condiciones
+                </label>
+                <button type="submit" class="btn button">Enviar</button>
+            </form>
+        </div>
+
+        <div class="contact__map">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d705.3054126761507!2d-78.45982701650101!3d-0.11756734969734678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1794957080829!5m2!1ses!2sec" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+    </section>
     <!-- End - Section Contact -->
 
-
     <!-- Start - Section Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__social">
+                <h3>Siguenos en redes sociales</h3>
+                <div class="social__icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <h3>Enlaces de interes</h3>
+                <div class="links">
+                    <a href="#">Soporte tecnico</a>
+                    <a href="#">Blog de noticias</a>
+                    <a href="#">Preguntas Frecuentes (FAQ)</a>
+                </div>
+            </div>
+
+
+            <div class="footer__contact">
+                <h3>Llamanos</h3>
+                <p class="call">(593) 997412865</p>
+                <h3>Escribenos</h3>
+                <p class="write">repuesmap@gmail.com</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="footer__copy">Derechos reservados - REPUESMAP</p>
+
+    </footer>
     <!-- End - Section Footer -->
 
 </body>
-
 
 </html>
